@@ -26,10 +26,7 @@ const limiter = rateLimit({
 
 app.use(limiter)
 
-console.log('Before bodyParser');
 app.use(bodyParser.json()); // Parse JSON requests
-console.log('After bodyParser');
-
 
 // Middleware setup
 app.use(bodyParser.json()); // Parse JSON requests
